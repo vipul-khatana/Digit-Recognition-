@@ -33,7 +33,7 @@ Download the mnist data set from http://yann.lecun.com/exdb/mnist/ and keep all 
 In the command line run as `python train.py` 
 
 ## Acknowledgement
-I would like to sincerely thank the [article](http://neuralnetworksanddeeplearning.com/chap1.html) by [Michael Nielson](http://michaelnielsen.org) for a brief explanation of the basics of the neural networks. 
+I would sincerely like to thank the [article](http://neuralnetworksanddeeplearning.com/chap1.html) by [Michael Nielson](http://michaelnielsen.org) for a brief explanation of the basics of the neural networks. 
 
 ## Author:  
 [Vipul Khatana](https://github.com/vipul-khatana) 
