@@ -6,7 +6,7 @@ In this project we train neural network to identify the digits from the [MNIST d
 ## Principles Used 
 Here a feed forward neural network has been implemented. At the heart of every neural network are small units called perceptrons. The following displays a perceptron unit. 
 
-<img src="Perceptron.png" alt="Drawing" width="200" height="200"/>
+<img src="Perceptron.png" alt="Drawing" width="300" height="200"/>
 
 
 Usage : In the command line type python main.py 
