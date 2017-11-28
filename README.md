@@ -28,6 +28,15 @@ Here y(x) is the predicted ouput from our network for an input x and a is the ac
 
 <img src="other/Updation_Rule.png" alt="Drawing" width="300" height="100"/>
 
+## Installation 
+Following libraries are required along with python : 
+numpy, matplotlib, mpl_toolkits.mplot3d, pandas. 
+
+These libraries can be installed by using the pip installer 
+
+If you have pip installed on your system then use `pip install library_name` to install the required library. 
+If you do not have pip then please look [here](https://pip.pypa.io/en/stable/installing/) on how to install pip
+
 ## How to run
 1) Download the mnist data set from http://yann.lecun.com/exdb/mnist/ and keep all the files in the same directory.  
 2) In the command line run as `python train.py` 
@@ -44,7 +53,7 @@ Course Project under [**Prof. Jayadeva**](http://ee.iitd.ernet.in/people/jayadev
 
 ## Contributing
 
-1) Fork it (https://github.com/vipul-khatana/Regression-models/fork)
+1) Fork it (https://github.com/vipul-khatana/Digit-Recognition-/fork)
 2) Create your feature branch `git checkout -b feature/fooBar`
 3) Commit your changes `git commit -am 'Add some fooBar'`
 4) Push to the branch `git push origin feature/fooBar`
