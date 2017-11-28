@@ -1,5 +1,10 @@
 # Digit-Recognition
 
+## Sections 
++ [Overview](https://github.com/vipul-khatana/Digit-Recognition-#overview)
++ [Principles Used](https://github.com/vipul-khatana/Digit-Recognition-#principles-used)
++ [Installation](https://github.com/vipul-khatana/Digit-Recognition-#installation)
+
 ## Overview
 In this project we train neural network to identify the digits from the [MNIST data set](https://en.wikipedia.org/wiki/MNIST_database). It is a simple feed forward neural network with back propogation. The dataset can be obtained in the IDX file format for MNIST digits from http://yann.lecun.com/exdb/mnist/ 
 
