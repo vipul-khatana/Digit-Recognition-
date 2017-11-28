@@ -29,10 +29,10 @@ Here y(x) is the predicted ouput from our network for an input x and a is the ac
 <img src="other/Updation_Rule.png" alt="Drawing" width="300" height="100"/>
 
 ## How to run
-Download the mnist data set from http://yann.lecun.com/exdb/mnist/ and keep all the files in the same directory.  
-In the command line run as `python train.py` 
-The final weights of the neural network after training will be saved as `final_weights.pkl` 
-The final result of the test set containing class label for every point in the data set would be saved as result.csv
+1) Download the mnist data set from http://yann.lecun.com/exdb/mnist/ and keep all the files in the same directory.  
+2) In the command line run as `python train.py` 
+3) The final weights of the neural network after training will be saved as `final_weights.pkl` 
+4) The final result of the test set containing class label for every point in the data set would be saved as result.csv
 
 ## Acknowledgement
 I would sincerely like to thank the [article](http://neuralnetworksanddeeplearning.com/chap1.html) by [Michael Nielson](http://michaelnielsen.org) for a brief explanation of the basics of the neural networks. 
@@ -41,3 +41,11 @@ I would sincerely like to thank the [article](http://neuralnetworksanddeeplearni
 [Vipul Khatana](https://github.com/vipul-khatana) 
 
 Course Project under [**Prof. Jayadeva**](http://ee.iitd.ernet.in/people/jayadeva.html) 
+
+## Contributing
+
+1) Fork it (https://github.com/vipul-khatana/Regression-models/fork)
+2) Create your feature branch `git checkout -b feature/fooBar`
+3) Commit your changes `git commit -am 'Add some fooBar'`
+4) Push to the branch `git push origin feature/fooBar`
+5) Create a new pull request 
