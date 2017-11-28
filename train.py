@@ -42,8 +42,7 @@ class load_idx:
     def get_magic_number(self):
         self.magic_number = np.frombuffer(self.fstream.read(4), dtype=self.header_dtype)
         return self.magic_number
-    
-  
+      
     def _extract_header(self):
         mask_dim = int('0x000000ff',16)                                  # Mask for dimensions. Since the information
                                                                          # about the dimensions is present in the last
@@ -159,7 +158,6 @@ test_images_obj = load_mnist(mnist_data_folder+testing_set_file_name, 'data', fi
 train_images = train_images_obj.load()
 train_labels = train_labels_obj.load()
 test_images = test_images_obj.load()
-#test_labels = test_labels_obj.load()
 # Many learning algorithms accepts images in the vector format. Hence converting images in the vector format.
 
 train_images = train_images.reshape(train_images.shape[0],np.prod(train_images.shape[1:]))
@@ -168,7 +166,6 @@ test_images = test_images.reshape(test_images.shape[0], np.prod(test_images.shap
 print(train_images.shape)
 print(test_images.shape)
 print(train_labels.shape)
-#print(test_labels.shape)
 
 def save_pickle(fileName, data):
     with open(fileName+'.pkl', 'w') as fid:
@@ -192,29 +189,10 @@ def load_pickle(fileName):
  #BEGINING THE CODE       
 [train_data,train_label] = load_pickle('train_images_with_labels_mnist.pkl')
 test = load_pickle('test_images.pkl') 
-
-#for i in range (train_data.shape[0]) :
-#    for j in range (train_data[i].shape[0]) : 
-#        train_data[i][j] = (float (train_data[i][j]/255.0))
-#        print (train_data[i][j])
-#train_data = np.matrix(train_data)
-#vector = [5 for _ in range(train_data.shape[0])]
-#new_train_data = np.multiply(train_data, vector, 0)
-#for line in new_train_data : 
- #   print (line) 
 train_data = train_data/255 
 test = test/255
-#for i in range (train_data.shape[0]) :
-#   for j in range (train_data[i].shape[0]) : 
-#       #train_data[i][j] = (float (train_data[i][j]/255.0))
-#       print (train_data[i][j])
-#testv2 = []
-#for i in range(test.shape[0]):
- #   testv2.append()
-    
-#print (train_data) 
-#print (train_label)
 trainv2 = []
+
 for i in range(train_data.shape[0]):
     #print (i)
     trainv2.append([train_data[i]] + [train_label[i]])
@@ -255,10 +233,6 @@ def power_e(val):
 
 # The Sigmoid function
 def sigmoid(X):
-    #print (X)
-    #print (X.shape)
-    #for i in range(X.shape[1]):
-     #   print (X.item(i))
     return np.matrix( [1 / (1 +power_e(-X.item(i))) for i in range(X.shape[1])] )
 
 # The SoftPlus function
@@ -371,7 +345,6 @@ for i in range(tests.shape[0]):
 # Create a mapping between different outcomes
 list1 = [0,1,2,3,4,5,6,7,8,9]
 list2 = [[1,0,0,0,0,0,0,0,0,0],[0,1,0,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0],[0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,0,1,0],[0,0,0,0,0,0,0,0,0,1]]
-# list1, list2 = ['win', 'draw', 'loss'], [[math.log(2),0,0],[0,math.log(2),0],[0,0,math.log(2)]]
 map_output = dict( zip( list1, list2))
 
 # Create train set and validation set
@@ -422,9 +395,7 @@ for i in range(len(C)):
     result = test(saved_hidden, saved_output, tests, map_output)
     result2 = result[:,1]
     result3 = [int(numeric_string) for numeric_string in result2]
-    #for line in result3 :
-     #   print (result3)
-    np.savetxt('result3.csv',result3)   
+    np.savetxt('result.csv',result3)   
     count = 0
     correct = 0
     for line in result:
