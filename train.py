@@ -1,7 +1,7 @@
 '''
-===========
-Neural Nets
-===========
+Created Wed Apr 20 2016
+
+@author vipulkhatana
 
 '''
 from __future__ import print_function
@@ -163,10 +163,6 @@ test_images = test_images_obj.load()
 train_images = train_images.reshape(train_images.shape[0],np.prod(train_images.shape[1:]))
 test_images = test_images.reshape(test_images.shape[0], np.prod(test_images.shape[1:]))
 
-print(train_images.shape)
-print(test_images.shape)
-print(train_labels.shape)
-
 def save_pickle(fileName, data):
     with open(fileName+'.pkl', 'w') as fid:
         pkl.dump(data,fid)
@@ -196,7 +192,6 @@ trainv2 = []
 for i in range(train_data.shape[0]):
     #print (i)
     trainv2.append([train_data[i]] + [train_label[i]])
-    #print (trainv2)
 testv2 = []
 for i in range(test.shape[0]):
     #print (i)
@@ -212,8 +207,6 @@ def readFile(fileName):
 
 # This helps create a single perceptron unit
 def create_unit(num):
-	# return np.array([0.0 for _ in range(num)]) # Zero Initialized Weights
-	# return np.array([random.uniform(-0.5, 0.5) for _ in range(num)]) # Random Initialized Weights
     initial_weight = np.array([random.uniform(-0.1, 0.1) for _ in range(num)])
     np.savetxt('initial_weight.txt',initial_weight)
 
