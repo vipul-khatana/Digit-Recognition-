@@ -3,7 +3,7 @@
 ## Sections 
 + [Overview](https://github.com/vipul-khatana/Digit-Recognition-#overview)
 + [Principles Used](https://github.com/vipul-khatana/Digit-Recognition-#principles-used)
-+ [Installation](https://github.com/vipul-khatana/Digit-Recognition-#installation)
++ [Libraries](https://github.com/vipul-khatana/Digit-Recognition-#libraries)
 + [How to run](https://github.com/vipul-khatana/Digit-Recognition-#how-to-run)
 + [Acknowledgements](https://github.com/vipul-khatana/Digit-Recognition-#acknowledgement)
 + [Author](https://github.com/vipul-khatana/Digit-Recognition-#author)
@@ -37,7 +37,7 @@ Here y(x) is the predicted ouput from our network for an input x and a is the ac
 
 <img src="other/Updation_Rule.png" alt="Drawing" width="300" height="100"/>
 
-## Installation 
+## Libraries 
 Following libraries are required along with python : 
 numpy, matplotlib, mpl_toolkits.mplot3d, pandas. 
 
